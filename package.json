@@ -1,6 +1,6 @@
 {
   "name": "joi-validate-patch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Validator for json patch contents according to joi document schemas",
   "main": "index.js",
   "scripts": {

@@ -71,6 +71,16 @@ function test(patch, match, errors, options) {
 
 describe('JoiValidatePatch', function() {
     
+    it('rejects non-patch inputs', function() {
+        test('blah', null, true);
+        test(null, null, true);
+        test(5, null, true);
+    });
+    
+    it('rejects empty patches', function() {
+        test([], null, 'empty patch'); 
+    });
+    
     it('validates step properties', function() {
         Object.keys(patchProps).forEach(function(type) {
             const patch = {op: type};
