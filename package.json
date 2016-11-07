@@ -1,0 +1,40 @@
+{
+  "name": "joi-validate-patch",
+  "version": "0.0.1",
+  "description": "Validator for json patch contents according to joi document schemas",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive",
+    "coverage": "istanbul cover --report html _mocha",
+    "travis": "istanbul cover --report lcovonly _mocha",
+    "posttravis": "istanbul check-coverage --statements $npm_package_config_min_coverage --branches $npm_package_config_min_coverage --lines $npm_package_config_min_coverage"
+  },
+  "config": {
+    "min_coverage": 90
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evan-king/joi-validate-patch.git"
+  },
+  "keywords": [
+    "joi",
+    "json",
+    "patch",
+    "validation"
+  ],
+  "author": "Evan King",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evan-king/joi-validate-patch/issues"
+  },
+  "homepage": "https://github.com/evan-king/joi-validate-patch#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^1.21.4"
+  },
+  "dependencies": {
+    "fast-json-patch": "^1.1.1",
+    "joi": "^9.2.0"
+  }
+}
